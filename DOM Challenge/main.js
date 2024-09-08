@@ -4,7 +4,7 @@ document.body.style.cssText = "margin: 0; padding:0; background-color: #eee"
 // header
 let header = document.createElement("div")
 header.className = "header";
-header.style.cssText = "display: flex; justify-content: space-between; align-items: center; padding: 0 15px; background-color: white;"
+header.style.cssText = "display: flex; justify-content: space-between; align-items: center; padding: 0 20px; background-color: white; color:#777;"
 
 // logo
 let logo = document.createElement("img")
@@ -44,9 +44,9 @@ for (let i = 0; i < 15; i++) {
     item.appendChild(span);
     let p = document.createElement("p");
     p.innerHTML = "Product";
-    p.style.cssText = "color:#777;margin:0;";
+    p.style.cssText = "color:#777;margin:0; margin-top: 10px";
     item.appendChild(p);
-    item.style.cssText="width: 31%; text-align: center; background-color: white; padding: 20px 0; margin-bottom: 15px"
+    item.style.cssText="width: 31%; text-align: center; background-color: white; padding: 30px 0; margin-bottom: 15px"
     content.appendChild(item);
 }
 document.body.appendChild(content);
@@ -54,5 +54,5 @@ document.body.appendChild(content);
 // footer
 let footer = document.createElement("div");
 footer.innerHTML = "Copyright 2024";
-footer.style.cssText = "background-color: #23a96e; padding: 20px 0; text-align: center; color: white; font-wight: bold; font-size: 22px"
+footer.style.cssText = "background-color: #4e8284; padding: 20px 0; text-align: center; color: white; font-wight: bold; font-size: 22px"
 document.body.appendChild(footer);
