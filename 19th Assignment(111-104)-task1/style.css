@@ -1,0 +1,29 @@
+ /* font-family: "Cairo", sans-serif; */
+ /*   font-family: "Roboto", sans-serif; */
+ /* font-family: "Open Sans", sans-serif; */
+
+ body {
+     margin: 0;
+     padding: 0;
+     font-family: "Open Sans", sans-serif;
+ }
+
+ .content{
+    background-color: #eee;
+    text-align: center;
+    padding: 30px;
+    width: 300px;
+    margin: 80px auto;
+}
+.content p{
+     font-size: 16px;
+ }
+
+ .selects{
+    width: 300px;
+    margin: auto;
+    text-align: center;
+ }
+ select{
+    padding: 7px 10px;
+ }
