@@ -50,3 +50,9 @@ for (let i = 0; i < 15; i++) {
     content.appendChild(item);
 }
 document.body.appendChild(content);
+
+// footer
+let footer = document.createElement("div");
+footer.innerHTML = "Copyright 2024";
+footer.style.cssText = "background-color: #23a96e; padding: 20px 0; text-align: center; color: white; font-wight: bold; font-size: 22px"
+document.body.appendChild(footer);
