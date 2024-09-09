@@ -41,11 +41,10 @@ if (window.localStorage.getItem("fontSize")) {
     })
 }
 // font family
-document.querySelectorAll("select")[0].onchange = function () {
-    let fontFamily = document.getElementById("fonts")
+document.getElementById("fonts").onchange = function () {
     // set font-family
-    fontFamily.value === "cairo" ? document.body.style.fontFamily = `"Cairo", sans-serif`
-        : fontFamily.value === "roboto" ? document.body.style.fontFamily = `"Roboto", sans-serif`
+    this.value === "cairo" ? document.body.style.fontFamily = `"Cairo", sans-serif`
+        : this.value === "roboto" ? document.body.style.fontFamily = `"Roboto", sans-serif`
             : document.body.style.fontFamily = `"Open Sans", sans-serif`;
 
     localStorage.setItem("fontFamily", window.getComputedStyle(document.body).getPropertyValue("font-family"));
@@ -55,15 +54,15 @@ document.querySelectorAll("select")[0].onchange = function () {
     })
     // add selected Att.
     document.querySelectorAll("#fonts option").forEach(function (op) {
-        if (fontFamily.value == op.value) {
+        if (this.value == op.value) {
             op.selected = true;
             // op.setAttribute("selected","selected")
         }
     })
 }
 // color
-document.querySelectorAll("select")[1].onchange = function () {
-    let color = document.getElementById("colors").value
+document.getElementById("colors").onchange = function () {
+    let color = this.value
     // set color
     document.body.style.color = color;
     localStorage.setItem("color", color);
@@ -80,8 +79,8 @@ document.querySelectorAll("select")[1].onchange = function () {
     })
 }
 // font size
-document.querySelectorAll("select")[2].onchange = function () {
-    let fontSize = document.getElementById("fontSize").value
+document.getElementById("fontSize").onchange = function () {
+    let fontSize = this.value
     // set font-size
     document.body.style.fontSize = `${fontSize}px`
     localStorage.setItem("fontSize", fontSize);
