@@ -32,7 +32,9 @@
 
 // 4th Task
 // let theNumber = 100020003000;
-// console.log(+([...(Array.from(theNumber.toString()).filter((e) => e != 0))].join("")));
+// // console.log(+([...(Array.from(theNumber.toString()).filter((e) => e != false))].join("")));
+// // Another Solution
+// console.log(+[...new Set(theNumber + "")].sort().join("").slice(true));
 // Needed Output
 // 123
 /////////////////////////////////////////////////////////////////////////////
