@@ -1,0 +1,37 @@
+[
+    {
+        "id": 101,
+        "name": "Ahmed",
+        "section": "CS",
+        "title": "Article One",
+        "content": "Text"
+    },
+    {
+        "id": 102,
+        "name": "Ali",
+        "section": "SC",
+        "title": "Article Two",
+        "content": "Text"
+    },
+    {
+        "id": 103,
+        "name": "Osama",
+        "section": "CS",
+        "title": "Article Three",
+        "content": "Text"
+    },
+    {
+        "id": 104,
+        "name": "Ayman",
+        "section": "AI",
+        "title": "Article Four",
+        "content": "Text"
+    },
+    {
+        "id": 105,
+        "name": "Omar",
+        "section": "CSys",
+        "title": "Article Five",
+        "content": "Text"
+    }
+]
